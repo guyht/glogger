@@ -1,0 +1,17 @@
+{
+  "name": "glogger",
+  "version": "0.0.1",
+  "description": "Customized Logger",
+  "keywords": [],
+  "author": "Guy Halford-Thompson <mrwooster@gmail.com>",
+  "dependencies": {
+    "winston": "*",
+    "winston-loggly" : "*",
+    "config" : "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "main": "index"
+}
