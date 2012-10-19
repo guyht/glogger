@@ -13,5 +13,8 @@
     "mocha": "*",
     "should": "*"
   },
+  "scripts": {
+      "postinstall": "cake build"
+  },
   "main": "index"
 }
