@@ -25,6 +25,8 @@ logger.add winston.transports.Console, (
 
 # Setup loggly logger if required
 if loggly
+    logger.info "Logging to Loggly"
+
     logger.add winston.transports.Loggly, (
         subdomain: logglySubdomain
         inputName: logglyInputName
@@ -46,6 +48,12 @@ class Log
 
     error: (msg, meta) ->
         @logger.error "#{@prefix} - #{msg}", meta
+
+    stream: ->
+        return (
+            write: (msg, encoding) =>
+                @logger.info "STREAM - #{msg}"
+        )
 
 
 module.exports = (p) ->
