@@ -14,7 +14,7 @@
     "should": "*"
   },
   "scripts": {
-      "postinstall": "git submodule init; git submodule update; cake build"
+      "postinstall": "cake build"
   },
   "main": "index"
 }
