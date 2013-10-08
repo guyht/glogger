@@ -7,14 +7,15 @@
   "dependencies": {
     "winston": "*",
     "winston-loggly" : "*",
-    "config" : "*"
+    "config" : "*",
+    "coffee-script": "*"
   },
   "devDependencies": {
     "mocha": "*",
     "should": "*"
   },
   "scripts": {
-      "postinstall": "cake build"
+      "postinstall": "./node_modules/coffee-script/bin/cake build"
   },
   "main": "index"
 }
