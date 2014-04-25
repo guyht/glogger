@@ -28,6 +28,7 @@ if loggly
     logger.info "Logging to Loggly"
 
     logger.add winston.transports.Loggly, (
+        level: 'info'
         subdomain: logglySubdomain
         inputName: logglyInputName
         inputToken: logglyInputToken
@@ -41,13 +42,13 @@ class Log
         @logger = logger
 
     info: (msg, meta) ->
-        @logger.info "#{@prefix} - #{msg}", meta
+        @logger.info "#{@prefix} - #{msg}", meta || ''
 
     debug: (msg, meta) ->
-        @logger.debug "#{@prefix} - #{msg}", meta
+        @logger.debug "#{@prefix} - #{msg}", meta || ''
 
     error: (msg, meta) ->
-        @logger.error "#{@prefix} - #{msg}", meta
+        @logger.error "#{@prefix} - #{msg}", meta || ''
 
     stream: ->
         return (
