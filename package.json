@@ -15,7 +15,7 @@
     "should": "*"
   },
   "scripts": {
-      "postinstall": "./node_modules/.bin/cake build"
+      "postinstall": "cake build"
   },
   "main": "index"
 }
