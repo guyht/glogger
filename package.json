@@ -15,7 +15,7 @@
     "should": "*"
   },
   "scripts": {
-      "postinstall": "cake build"
+      "postinstall": "coffee -c -o lib src"
   },
   "main": "index"
 }
