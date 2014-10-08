@@ -5,7 +5,7 @@ fs = require 'fs'
 
 
 task 'build', 'Build project', ->
-    run 'coffee', ['-c', '-o', 'lib', 'src']
+    run './node_modules/.bin/coffee', ['-c', '-o', 'lib', 'src']
 
 task 'watch', 'Compile files on changes', ->
     run 'coffee', ['-w', '-c', '-o', 'lib', 'src']
