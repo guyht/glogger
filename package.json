@@ -5,10 +5,10 @@
   "keywords": [],
   "author": "Guy Halford-Thompson <mrwooster@gmail.com>",
   "dependencies": {
-    "winston": "*",
+    "winston": "^2.4.4",
     "winston-loggly" : "*",
     "config" : "*",
-    "coffee-script": "*"
+    "coffeescript": "*"
   },
   "devDependencies": {
     "mocha": "*",
